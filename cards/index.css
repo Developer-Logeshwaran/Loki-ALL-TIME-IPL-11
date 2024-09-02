@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #121111;
+    color: #fff;
+}
+
+.cup{
+    display: flex;
+    justify-items: baseline;
+    justify-content: space-between;
+    box-shadow: 5px 5px 20px rgba(166, 165, 165, 0.5);
+    border-radius: 5% 5% 10% 10%;
+}
+.loki{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f1f1f6;
+    background: #121111;
+    text-shadow: 6px 6px 4px rgb(137, 125, 19);
+    word-spacing: 3px;
+    width: 100%;
+    font-family: "Libre Baskerville", serif;
+   
+}
+ 
+.ipl{
+    filter: drop-shadow(5px 5px 10px gold);
+}
+.logoo{
+    filter: drop-shadow(5px 5px 8px rgb(101, 141, 180));
+}
+
+.wrap{
+    padding: 10px 10%;
+}
+#container{
+    padding:  50px 0;
+}
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(166, 165, 165, 0.5);
+}
+
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.para{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent,#161515 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 35px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s ;
+}
+.para h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 70%;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 30px;
+    letter-spacing: 2px; 
+}
+.para a{
+    margin-top: 10px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 14px;
+    background: rgba(189, 187, 187, 0.5);;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+}
+.para a:hover{
+    background: rgb(230, 230, 230);
+}
+
+
+.box:hover .para{
+    height: 100%;
+
+}
+.box:hover{
+    box-shadow: 5px 5px 4px 4px rgb(137, 125, 19);
+    transition-duration: 1s;
+
+}
+
+/* Responsive Images */
+.logoo, .ipl {
+    max-width: 40%; 
+    height: auto;
+}
+
+/* Responsive Text */
+.loki {
+    font-size: 2.7vw; 
+    margin: 10px 0; 
+}
+@media (max-width: 1200px) {
+    .loki {
+        
+        font-size: 3.7vw; /* Adjust font size for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .loki {
+        font-size: 3.5vw; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .loki {
+        font-size: 3.3vw; /* Further adjust font size for mobile screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .loki {
+        font-size: 2.9vw; /* Adjust font size for very small screens */
+    }
+}
